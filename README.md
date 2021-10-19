@@ -19,3 +19,11 @@
 - Make sure to create Elastic IP/ Static IP to the virtual machine so that Pubmic IP will not change when machine gets rebooted.
 
 $ jupyter lab --port $PORT --no-browser ==> can be used as well
+
+*#2. IAM*
+
+Users: Mapped to physical users and have password to log into AWS Console
+Policies: Documents which outlines the user permissions/groups in JSON format
+Roles : for EC2 instances or for AWS Services
+Security : MFA + Password policy
+Audit: IAM credential reports and IAM Access Advisor
