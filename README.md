@@ -20,7 +20,7 @@
 
 $ jupyter lab --port $PORT --no-browser ==> can be used as well
 
-*#2. IAM*
+*#2. IAM (Identity and Access Management)*
 
 Users: Mapped to physical users and have password to log into AWS Console
 
