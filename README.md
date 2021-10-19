@@ -1,6 +1,6 @@
-# My AWS certification preparation
+# My AWS certification preparation notes
 
-*How to start JupyterLab in AWS Cloud9
+* #1. How to start JupyterLab in AWS Cloud9 *
 
 - Validate Python
 
