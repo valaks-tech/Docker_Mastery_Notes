@@ -1,4 +1,4 @@
-# My AWS certification preparation notes
+# AWS Certification + Data Eng Lab Notes
 
 *#1. How to start JupyterLab in AWS Cloud9*
 
@@ -32,3 +32,4 @@ $ jupyter lab --port $PORT --no-browser ==> can be used as well
 - Security : MFA + Password policy
 
 - Audit: IAM credential reports and IAM Access Advisor
+
