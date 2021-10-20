@@ -1,7 +1,7 @@
-# AWS Certification + Data Eng Lab Notes
+##### AWS Certification + Data Eng Lab Notes
 
- *#1. How to start JupyterLab in AWS Cloud9*
-```markdown
+ ### 1. How to start JupyterLab in AWS Cloud9*
+
 - Validate Python
 
 - Create Virtual Environment $ python3 -m venv dataeng_lab
@@ -21,7 +21,7 @@
 
 $ jupyter lab --port $PORT --no-browser ==> can be used as well
 
-*#2. IAM (Identity and Access Management)*
+### 2. IAM (Identity and Access Management)
 
 - Users: Mapped to physical users and have password to log into AWS Console
 
