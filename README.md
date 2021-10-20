@@ -1,7 +1,7 @@
 # AWS Certification + Data Eng Lab Notes
 
-*#1. How to start JupyterLab in AWS Cloud9*
-
+ *#1. How to start JupyterLab in AWS Cloud9*
+```markdown
 - Validate Python
 
 - Create Virtual Environment $ python3 -m venv dataeng_lab
