@@ -1,14 +1,20 @@
-##### AWS Certification + Data Eng Lab Notes
+#### AWS Certification + Data Eng Lab Notes
 
- ### 1. How to start JupyterLab in AWS Cloud9*
+ ### 1. How to start JupyterLab in AWS Cloud9
 
 - Validate Python
 
-- Create Virtual Environment $ python3 -m venv dataeng_lab
+- Create Virtual Environment 
+    
+   `$ python3 -m venv dataeng_lab`
 
-- Activate Virtual Environment $ source dataeng_lab/bin/activate
+- Activate Virtual Environment 
+    
+    `$ source dataeng_lab/bin/activate`
 
-- Install Jupyter Lab using pip $ pip install jupyterlab
+- Install Jupyter Lab using pip 
+
+     `$ pip install jupyterlab`
 
 - Start Jupyter Lab (Here 0.0.0.0 is used to ALLOW any IP, but we can restrict by giving myip(or specific ip) only.
  
