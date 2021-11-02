@@ -40,3 +40,45 @@
 
 - Audit: IAM credential reports and IAM Access Advisor
 
+### 3. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
+
+- Pull the postgres image using `docker pull`
+
+- Create the container using `docker create`.
+
+- Start the container using `docker start`.
+
+- Alternatively we can use `docker run` which will pull, create and start the container.
+
+- Use `docker logs` or `docker logs -f` to review the logs to ensure Postgres Server is up and running.
+
+```docker pull postgres
+
+docker container create \
+    --name dataeng_pg \
+    -p 5432:5432 \
+    -h dataeng_pg \
+    -e POSTGRES_PASSWORD=mypassword \
+    postgres
+
+docker start dataeng_pg
+
+docker logs dataeng_pg 
+```
+
+- You can connect to Postgres Database setup using Docker with `docker exec`
+
+```
+docker exec \
+    -it dataeng_pg \
+    psql -U postgres
+```
+
+- You can also connect to Postgres directly with out using `docker exec`, provided you have Postgres client setup on the host from which you are trying to connect to Postgres database. 
+
+``` psql -h localhost \
+    -p 5432 \
+    -d postgres \
+    -U postgres \
+    -W 
+```
