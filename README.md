@@ -76,7 +76,8 @@ docker exec \
 
 - You can also connect to Postgres directly with out using `docker exec`, provided you have Postgres client setup on the host from which you are trying to connect to Postgres database. 
 
-``` psql -h localhost \
+```
+psql -h localhost \
     -p 5432 \
     -d postgres \
     -U postgres \
