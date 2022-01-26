@@ -40,7 +40,16 @@
 
 - Audit: IAM credential reports and IAM Access Advisor
 
-### 3. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
+### 3. Whats Docker ?
+
+Docker Architecture :
+
+`Docker client -->  Docket Host    --> Docker Registry/Docker Hub`
+
+When you run 'docker run <image>' command, docker client will contact Docker Daemon running on Docker Host. Docker Daemon will try to locate the <image> locally on Docker Host.
+ If it finds it, it will pull the image and execute inside the container. 
+
+### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
 - Pull the postgres image using `docker pull`
 
