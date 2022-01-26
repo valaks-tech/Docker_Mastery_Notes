@@ -48,6 +48,21 @@ Docker Architecture :
 
 When you run 'docker run <image>' command, docker client will contact Docker Daemon running on Docker Host. Docker Daemon will try to locate the <image> locally on Docker Host.
  If it finds it, it will pull the image and execute inside the container. 
+ 
+ #### Docker Daemon :
+   - Runs on Docker host
+   - Creates and manages docker objects such as :
+      * Images
+      * Containers
+      * Network, Volume etc
+ #### Docker Client :
+   - User interface which accepts commands from user and communicates with Docker Host
+ 
+ #### Docker Images :
+   - Build component of docker
+   - Used to created docker containers, provides a way to create new or update existing images
+ 
+ 
 
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
