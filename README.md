@@ -101,7 +101,23 @@ CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS 
 555a9c63f4aa   ubuntu:latest   "bash"    18 minutes ago   Up 10 minutes             vibrant_lederberg
 PS C:\Users\shail>
  ```
-
+Renaming the container
+ ```
+ PS C:\Users\shail> docker ps
+CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS     NAMES
+382b16e46beb   ubuntu:latest   "bash"    5 minutes ago    Up 5 minutes              magical_perlman
+555a9c63f4aa   ubuntu:latest   "bash"    18 minutes ago   Up 10 minutes             vibrant_lederberg
+PS C:\Users\shail> docker rename magical_perlman shaila_ubuntu_1
+PS C:\Users\shail> docker ps
+CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS     NAMES
+382b16e46beb   ubuntu:latest   "bash"    9 minutes ago    Up 9 minutes              shaila_ubuntu_1
+555a9c63f4aa   ubuntu:latest   "bash"    21 minutes ago   Up 13 minutes             vibrant_lederberg
+PS C:\Users\shail> docker container ls
+CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS     NAMES
+382b16e46beb   ubuntu:latest   "bash"    9 minutes ago    Up 9 minutes              shaila_ubuntu_1
+555a9c63f4aa   ubuntu:latest   "bash"    21 minutes ago   Up 13 minutes             vibrant_lederberg
+PS C:\Users\shail>
+ ```
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
 - Pull the postgres image using `docker pull`
