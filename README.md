@@ -118,6 +118,23 @@ CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS 
 555a9c63f4aa   ubuntu:latest   "bash"    21 minutes ago   Up 13 minutes             vibrant_lederberg
 PS C:\Users\shail>
  ```
+ 
+ Stop the container
+ ```
+ PS C:\Users\shail> docker stop shaila_ubuntu_1
+shaila_ubuntu_1
+PS C:\Users\shail> docker container ls
+CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS     NAMES
+555a9c63f4aa   ubuntu:latest   "bash"    27 minutes ago   Up 19 minutes             vibrant_lederberg
+PS C:\Users\shail> docker container ls -a
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS                        PORTS     NAMES
+382b16e46beb   ubuntu:latest   "bash"                   15 minutes ago   Exited (0) 12 seconds ago               shaila_ubuntu_1
+555a9c63f4aa   ubuntu:latest   "bash"                   27 minutes ago   Up 19 minutes                           vibrant_lederberg
+13010265b572   ubuntu:latest   "bash"                   48 minutes ago   Exited (127) 28 minutes ago             confident_rubin
+fac2ae66274d   alpine/git      "git clone https://g…"   6 hours ago      Exited (0) 6 hours ago                  repo
+PS C:\Users\shail>
+ ```
+ 
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
 - Pull the postgres image using `docker pull`
