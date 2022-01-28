@@ -82,7 +82,15 @@ CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS              POR
 PS C:\Users\shail>
 ```
  
- To come out of docker container without making docker exit, CTRL+P CTRL+Q
+ To come out of docker container without making docker exit, CTRL+P CTRL+Q and to go back inside the docker container:
+ ```
+ PS C:\Users\shail> docker attach 382b16e46beb
+root@382b16e46beb:/# ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 00:30 pts/0    00:00:00 bash
+root        10     1  0 00:33 pts/0    00:00:00 ps -ef
+root@382b16e46beb:/#
+ ```
 
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
