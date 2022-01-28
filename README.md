@@ -134,6 +134,7 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS 
 fac2ae66274d   alpine/git      "git clone https://g…"   6 hours ago      Exited (0) 6 hours ago                  repo
 PS C:\Users\shail>
  ```
+ `docker rm` is for containers and `docker rmi` is for images
  
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
