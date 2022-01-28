@@ -128,3 +128,9 @@ Server: Docker Engine - Community
   GitCommit:        de40ad0
 PS C:\Users\shail>
 ```
+
+ Hyper-V and Oracle VM VirtualBox are both server virtualization products designed to run virtual machines. 
+ Hyper-V is a type 1 hypervisor that manages operating systems by running directly on a computer's hardware. 
+ In contrast, Oracle VM VirtualBox is a type 2 hypervisor, which runs on the host operating system
+ 
+ 
