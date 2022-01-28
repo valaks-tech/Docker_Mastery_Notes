@@ -62,7 +62,25 @@ When you run 'docker run <image>' command, docker client will contact Docker Dae
    - Build component of docker
    - Used to created docker containers, provides a way to create new or update existing images
  
- 
+ ```
+ root@555a9c63f4aa:/# exit
+exit
+PS C:\Users\shail> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS C:\Users\shail> docker ps -a
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS                        PORTS     NAMES
+555a9c63f4aa   ubuntu:latest   "bash"                   7 minutes ago    Exited (127) 11 seconds ago             vibrant_lederberg
+13010265b572   ubuntu:latest   "bash"                   28 minutes ago   Exited (127) 7 minutes ago              confident_rubin
+fac2ae66274d   alpine/git      "git clone https://g…"   6 hours ago      Exited (0) 6 hours ago                  repo
+PS C:\Users\shail> docker start 555a9c63f4aa
+555a9c63f4aa
+PS C:\Users\shail> docker attach 555a9c63f4aa
+root@555a9c63f4aa:/#
+ PS C:\Users\shail> docker ps
+CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS              PORTS     NAMES
+555a9c63f4aa   ubuntu:latest   "bash"    9 minutes ago   Up About a minute             vibrant_lederberg
+PS C:\Users\shail>
+```
 
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
 
