@@ -90,6 +90,16 @@ UID        PID  PPID  C STIME TTY          TIME CMD
 root         1     0  0 00:30 pts/0    00:00:00 bash
 root        10     1  0 00:33 pts/0    00:00:00 ps -ef
 root@382b16e46beb:/#
+ 
+ PS C:\Users\shail> docker container ls
+CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS         PORTS     NAMES
+382b16e46beb   ubuntu:latest   "bash"    5 minutes ago    Up 5 minutes             magical_perlman
+555a9c63f4aa   ubuntu:latest   "bash"    17 minutes ago   Up 9 minutes             vibrant_lederberg
+PS C:\Users\shail> docker ps
+CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS          PORTS     NAMES
+382b16e46beb   ubuntu:latest   "bash"    5 minutes ago    Up 5 minutes              magical_perlman
+555a9c63f4aa   ubuntu:latest   "bash"    18 minutes ago   Up 10 minutes             vibrant_lederberg
+PS C:\Users\shail>
  ```
 
 ### 4. How to setup Postgres database using Docker (I have used Ubuntu for my exercises)
