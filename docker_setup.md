@@ -1,3 +1,12 @@
+Docker uses client-server architecture.
+
+
+###docker commands
+
+- docker version
+- docker info
+- docker <MANAGEMENT COMMAND> <SUB COMMAND> => docker container run (NEW) docker run (OLD)
+ 
 ```
 λ docker version                                                    
 Client:                                                             
