@@ -38,4 +38,11 @@ Status: Downloaded newer image for nginx:latest
 ```
 
 
-### Gotp http://localhost on browser and there you go you can see nginx webserver running !
+### Now, goto http://localhost on browser and there you go you can see nginx webserver running !
+
+## What does that command do?
+- Downloaded nginx image from docker hub
+- started new container from that image
+- Opened port 80 on host
+- routes the traiifc to container IP, port 80
+-p.s : You will get "bind" error if the left number (80:) i.e host port is being used by anything else! May be you can like 8080:80 then use localhost:8888 while testing on browser.
